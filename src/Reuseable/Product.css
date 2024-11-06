@@ -1,0 +1,152 @@
+.product_container{
+    width: 100%;
+    margin: 0 auto;
+}
+.aaa{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 30px;
+    margin: 0 auto;
+}
+.zzz{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.zzz h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.zzz p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.zzz p:hover{
+    color: #35A852;
+}
+.product_box{
+    width: 100%;
+    height: 450px;
+    background-color: #fefeff6c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 16px 0 gainsboro;
+    transition: transform 0.3s ease, border 0.3s ease; 
+    overflow: hidden;
+    border: 2px solid transparent;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.product_box:hover{
+    cursor: pointer;
+    border: 2px solid rgba(82, 174, 82, 0.404);
+}
+.product_box:hover .hove_contain{
+    right: 0;
+}
+.product_box:hover img{
+transform: scale(1.1);
+}
+.product_box img{
+    width: 100%;
+    height: 200px;
+    margin-top: 30px;
+    transition: 1s;
+}
+.product_box img:hover{
+    transform: scale(1.1);
+}
+.product_icons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.product_box h3{
+    margin-top: 10px;
+    font-size: 25px;
+}
+.product_price{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 600;
+    /* background-color: blueviolet; */
+}
+.product_price p:nth-child(1) {
+    text-decoration: line-through;
+    color: #999; 
+  }
+.product_price p:nth-child(2) {
+    color: red;
+}
+.product_box button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color:#D7EFDD; 
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  .product_box button:hover {
+    background-color: #35A852;
+    transform: translateY(-2px);
+    color: #FEFEFF;
+  }
+  .product_box button svg {
+    font-size: 20px;
+  }
+.hove_contain{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    transition: 1s;
+}
+.hove_icons{
+    width: 50px;
+    height: 50px;
+    background-color: #D7EFDD;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.hove_icons:hover{
+    background-color: #35A852;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.side_icons{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.zoom{
+    font-size: 30px;
+}
