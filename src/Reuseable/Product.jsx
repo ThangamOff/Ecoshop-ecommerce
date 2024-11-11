@@ -6,8 +6,6 @@ import { MdOutlineZoomOutMap } from "react-icons/md";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { GrRefresh } from "react-icons/gr";
 
-
-
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -28,10 +26,7 @@ const Product = (props) => {
   return (
     <>
 
-    <div className='zzz'>
-        <h2>Fresh Vegetables</h2>
-        <p>View All</p>
-    </div>
+ 
 
     <div className='mySwiper'>
     <Swiper

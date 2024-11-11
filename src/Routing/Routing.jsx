@@ -7,6 +7,10 @@ import About from "../Pages/About"
 import Blog from "../Pages/Blog"
 import Dashboard from "../Pages/Dashboard"
 import Contact from "../Pages/Contact"
+import Register from '../Component/Register/Register'
+import Login from '../Component/Login/Login'
+import Allproduct from '../Component/Allproduct/Allproduct'
+import Viewproduct from '../Component/Viewproduct/Viewproduct'
 
 const Routing = () => {
   return (
@@ -20,7 +24,11 @@ const Routing = () => {
             <Route path="/blog" element={<Blog/>} />
             <Route path="/userDashboard" element={<Dashboard/>} />
             <Route path="/contact" element={<Contact/>} />
-
+            <Route path="/reg" element={<Register/>} />
+            <Route path="/login" element={<Login/>} />
+            <Route path="/allproduct" element={<Allproduct/>} />
+            <Route path="/viewproduct" element={<Viewproduct/>} />
+            
         </Routes>
       </BrowserRouter>
     </>

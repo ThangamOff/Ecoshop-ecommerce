@@ -8,8 +8,12 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
     const [hide, sethide] = useState(false)
 
-    function opendiv(params) {
-        
+    function opendiv(data) {
+        console.log(data);
+        sethide(data);
+    }
+    function closediv(params) {
+        sethide(false)
     }
 
   return (
@@ -24,36 +28,48 @@ const Navbar = () => {
                 </select>
                 <div className='nav_list'>
                         <Link to="/"><p>Home</p></Link>
-                    <div className='shop_nav' onMouseOver={()=>opendiv("s1")}>
-                        <Link to="/shop"><p>Shop</p></Link>
-                        <MdAdd className='plus' />
+                    <div className='n1'>
+                        <div className='shop_nav' onMouseOver={()=>opendiv("s1")}  onMouseLeave={()=>closediv()}>
+                            <Link to="/shop"><p>Shop</p></Link>
+                            <MdAdd className='plus' />
+                        </div>
+                        <div className={hide=="s1"?"shop":"shop1"}>
+                            <p>1111111</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
                     </div>
-                        {/* <div className='shop_drop_down'>
-                            <div className='drop_down_p'>
-                                <p>1111</p>
-                            </div>
-                            <div className='drop_down_p'>
-                                <p>222</p>
-                            </div>
-                            <div className='drop_down_p'>
-                                <p>3</p>
-                            </div>
-                            <div className='drop_down_p'>
-                                <p>4</p>
-                            </div>
-                        </div> */}
 
-                    <div className='shop_nav'>
-                        <Link to="/pages"><p>Pages</p></Link>
-                        <MdAdd className='plus' />
+                    <div className='n1'>
+                        <div className='shop_nav' onMouseOver={()=>opendiv("s2")}  onMouseLeave={()=>closediv()}>
+                            <Link to="/pages"><p>Pages</p></Link>
+                            <MdAdd className='plus' />
+                        </div>
+                            <div className={hide=="s2"?"page":"page1"}>
+                                <p>Product-details</p>
+                                <p>Privacy Policy</p>
+                                <p>Term & Condition</p>
+                                <p>FAQ</p>
+                                <p>Shop Category Icon</p>
+                                <p>Shop List View</p>
+                            </div>
                     </div>
+
                         <Link to="/about"><p>About</p></Link>
-                        <Link to="/blog"><p>Blog</p></Link>
+                        <div className='n1'>
+                            <Link to="/blog" onMouseOver={()=>opendiv("s3")} onMouseLeave={()=>closediv()}><p>Blog</p></Link>
+                            <div className={hide=="s3"?"blog":"blog1"}>
+                                <p>Blog Details</p>
+                                <p></p>
+                            </div>
+                        </div>
                         <Link to="/userDashboard"><p>User Dashboard</p></Link>
                         <Link to="/contact"><p>Contact</p></Link>
                 </div>
 
-                <button className='nav_button'>Seller Login</button>
+               <Link to="/reg"> <button className='nav_button'>Seller Login</button></Link>
                 
             </div>
         </div>

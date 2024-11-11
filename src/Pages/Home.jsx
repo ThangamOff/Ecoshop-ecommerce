@@ -11,7 +11,7 @@ import egg from "../Assets/Images/egg.jpg"
 import watermelon from "../Assets/Images/watermelon.jpg"
 import beef from "../Assets/Images/beef.png"
 import Footer from '../Component/Footer/Footer'
-
+import { Link } from 'react-router-dom'
 const Home = () => {
   const vegetableProducts = [
     {
@@ -98,6 +98,10 @@ const Home = () => {
       <Profile/>
       <Bottom/>
       <Category/>
+      <div className='zzz'>
+        <h2>Fresh Vegetables</h2>
+        <Link to="/allproduct"><p>View All</p></Link>
+      </div>
       <Product veg={vegetableProducts}/>
       <Footer/>
     </>

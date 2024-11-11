@@ -1,0 +1,29 @@
+.all_product_con{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+.all_product_lef{
+    width: 30%;
+    height: 80px;
+    background-color: rgb(115, 175, 195);
+}
+.all_product_rig{
+    width: 60%;
+}
+.rig_top{
+    width: 90%;
+    height: 50px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.rig_product{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    margin: 20px auto;
+}
