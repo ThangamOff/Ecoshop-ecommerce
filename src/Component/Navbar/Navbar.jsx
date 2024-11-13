@@ -3,6 +3,7 @@ import "./Navbar.css"
 import { MdAdd } from "react-icons/md";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { Link } from 'react-router-dom';
+import shop4 from '../../Assets/Images/shop4.jpg'
 
 
 const Navbar = () => {
@@ -34,11 +35,28 @@ const Navbar = () => {
                             <MdAdd className='plus' />
                         </div>
                         <div className={hide=="s1"?"shop":"shop1"}>
-                            <p>1111111</p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
+                            <div className='shop_hov1'>
+                                <h2>Dresses</h2>
+                                <p>Shirt</p>
+                                <p>Skart</p>
+                                <p>T-Shirt</p>
+                            </div>
+                            <div className='shop_hov2'>
+                                <h2>Bags</h2>
+                                <p>HandBags</p>
+                                <p>Mobile Bags</p>
+                                <p>School Bags</p>
+                            </div>
+                            <div className='shop_hov3'>
+                                <h2>Cosmetics</h2>
+                                <p>Liptics</p>
+                                <p>Foundation</p>
+                                <p>Eye Liner</p>
+                            </div>
+                            <div className='shop_hov4'>
+                                <img src={shop4} alt="" />
+                            </div>
+                            
                         </div>
                     </div>
 

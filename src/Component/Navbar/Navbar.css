@@ -130,3 +130,63 @@
     box-shadow: 0px 4px 8px gainsboro;
     transition: 1s;
 }
+.shop1{
+    width: 800px;
+    height: 250px;
+    background-color: gainsboro;
+    color: black;
+    position: absolute;
+    opacity: 0;
+    border-radius: 4px;
+    padding: 8px;
+    box-shadow: 0px 4px 8px gainsboro;
+}
+.shop{
+    width:800px;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    font-weight: 800;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px gainsboro;
+    transition: 1s;
+}
+.shop_hov1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.shop_hov2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.shop_hov3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.shop_hov4{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.shop_hov4 img{
+    width: 100%;
+    height: auto;
+}
