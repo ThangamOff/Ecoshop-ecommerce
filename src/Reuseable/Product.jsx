@@ -16,12 +16,20 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { Autoplay} from 'swiper/modules';
+import { useNavigate } from 'react-router-dom';
 
 
 
 const Product = (props) => {
+  const navigate = useNavigate();
+
   console.log(props);
   let product=props.veg
+
+  function addcart() {
+  
+    navigate('/addtocart')
+  }
   
   return (
     <>
@@ -63,7 +71,7 @@ const Product = (props) => {
                 <p>{data.offerPrice}</p>
                 <p>{data.price}</p>
               </div>
-                <button><BiPlus />Add To Cart</button>
+                <button onClick={addcart}><BiPlus />Add To Cart</button>
                 <div className='hove_contain'>
               <div className='hove_icons'>
                 <div className='side_icons'>

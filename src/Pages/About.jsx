@@ -9,6 +9,12 @@ const About = () => {
     <Track/>
     <Top/>
     <Navbar/>
+    <div className='detail_img'>
+            <div className='detail_title'>
+                <p>Home/Contact</p>
+                <h2>About</h2>
+            </div>
+        </div>
     </>
   )
 }

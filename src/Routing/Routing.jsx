@@ -11,6 +11,7 @@ import Register from '../Component/Register/Register'
 import Login from '../Component/Login/Login'
 import Allproduct from '../Component/Allproduct/Allproduct'
 import Viewproduct from '../Component/Viewproduct/Viewproduct'
+import Addcart from '../Component/Addcart/Addcart'
 
 const Routing = () => {
   return (
@@ -28,7 +29,7 @@ const Routing = () => {
             <Route path="/login" element={<Login/>} />
             <Route path="/allproduct" element={<Allproduct/>} />
             <Route path="/viewproduct" element={<Viewproduct/>} />
-            
+            <Route path="/addtocart" element={<Addcart/>} />
         </Routes>
       </BrowserRouter>
     </>
