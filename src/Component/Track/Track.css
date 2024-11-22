@@ -40,3 +40,18 @@
     font-size: 20px;
     color: #27AE60;
 }
+
+@media screen and (max-width:768px) {
+    .track_container{
+        width: 100%;
+        height: auto;
+        background-color:rgb(243, 243, 243);
+        display: flex;
+        justify-content: space-between;
+        font-weight: 500;
+    }
+    .track_contact{
+        display: none;
+    } 
+
+}

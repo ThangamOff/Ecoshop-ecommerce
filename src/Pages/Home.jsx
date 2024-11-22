@@ -1,7 +1,4 @@
 import React from 'react'
-import Track from '../Component/Track/Track'
-import Top from '../Component/Top/Top'
-import Navbar from '../Component/Navbar/Navbar'
 import Profile from '../Component/Profile/Profile'
 import Bottom from '../Component/Bottom/Bottom'
 import Category from './Category'
@@ -10,7 +7,6 @@ import tomato from "../Assets/Images/tomato.jpg"
 import egg from "../Assets/Images/egg.jpg"
 import watermelon from "../Assets/Images/watermelon.jpg"
 import beef from "../Assets/Images/beef.png"
-import Footer from '../Component/Footer/Footer'
 import { Link } from 'react-router-dom'
 const Home = () => {
   const vegetableProducts = [
@@ -91,9 +87,6 @@ const Home = () => {
   ];
   return (
     <>
-      <Track/>
-      <Top/>
-      <Navbar/>
       <Profile/>
       <Bottom/>
       <Category/>
@@ -102,7 +95,6 @@ const Home = () => {
         <Link to="/allproduct"><p>View All</p></Link>
       </div>
       <Product veg={vegetableProducts}/>
-      <Footer/>
     </>
   )
 }

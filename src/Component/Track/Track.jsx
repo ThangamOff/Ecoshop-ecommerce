@@ -16,11 +16,11 @@ const Track = () => {
                 <div className='track_contact'>
                     <div className='contact_details'>
                         <FaPhoneVolume className='Track_icon1' />
-                        <p>+63793 18998</p>
+                        <p>+14528 58963</p>
                     </div>
                     <div className='contact_details'>
                         <IoIosMail className='Track_icon' />
-                        <p>thangam@gmail.com</p>
+                        <p>eco@gmail.com</p>
                     </div>
                 </div>
             </div>

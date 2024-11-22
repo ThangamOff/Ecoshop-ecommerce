@@ -1,16 +1,10 @@
 import React from 'react'
 import './Viewproduct.css'
-import Track from '../Track/Track'
-import Top from '../Top/Top'
-import Navbar from '../Navbar/Navbar'
 import tomato from "../../Assets/Images/tomato.jpg"
 
 const Viewproduct = () => {
   return (
     <>
-    <Track/>
-    <Top/>
-    <Navbar/>
     <div className='View_con'>
         <div className='view_img'>
             <div>
@@ -22,7 +16,7 @@ const Viewproduct = () => {
             </div>
         </div>
         <div className='view_img_details'>
-            <p>aaaaaa</p>
+            <h1>Fruits</h1>
         </div>
     </div>   
     </>

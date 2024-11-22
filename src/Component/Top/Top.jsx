@@ -19,7 +19,6 @@ const Top = () => {
                   <option value="">juice</option>
                   <option value="">meat</option>
                 </select>
-
                 <button>Search</button>
             </div>
             <div className='top_icons'>

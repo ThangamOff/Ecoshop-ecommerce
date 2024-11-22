@@ -6,9 +6,6 @@ import Navbar from '../Component/Navbar/Navbar'
 const Blog = () => {
   return (
     <>
-      <Track/>
-      <Top/>
-      <Navbar/>
       <div className='detail_img'>
             <div className='detail_title'>
                 <p>Home/Contact</p>

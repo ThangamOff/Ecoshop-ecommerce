@@ -7,11 +7,7 @@ import Details from '../Component/Contact/Details'
 const Contact = () => {
   return (
     <>
-    <Track/>
-    <Top/>
-    <Navbar/>
     <Details/>
-    <Footer/>
     </>
   )
 }

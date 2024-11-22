@@ -16,7 +16,7 @@ import Addcart from '../Component/Addcart/Addcart'
 const Routing = () => {
   return (
     <>
-      <BrowserRouter>
+      
         <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/shop" element={<Shop/>} />
@@ -31,7 +31,6 @@ const Routing = () => {
             <Route path="/viewproduct" element={<Viewproduct/>} />
             <Route path="/addtocart" element={<Addcart/>} />
         </Routes>
-      </BrowserRouter>
     </>
   )
 }
