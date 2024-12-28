@@ -15,6 +15,10 @@
     max-width: 350px;
     text-align: center;
   }
+  .login-container p{
+    color: red;
+    font-size: 17px;
+  }
   
   .login-container h2 {
     color: #333;

@@ -39,14 +39,14 @@ console.log(mail)
     <div className='log-body'>
         <div className="login-container">
             <h2>Login</h2>
-        <h3>{success}</h3>
+            <h3>{success}</h3>
             <input type="email" placeholder="Email" name="lmail" onChange={logdata} />
                 {error.lmail && 
-                    <p>add mail</p>
+                    <p>Add mail</p>
                 }           
             <input type="password" placeholder="Password"name="pass" onChange={logdata} />
                 {error.pass && 
-                    <p>add pass</p>
+                    <p>Add pass</p>
                 }  
             <button onClick={loginHome}>Login</button>
         </div>

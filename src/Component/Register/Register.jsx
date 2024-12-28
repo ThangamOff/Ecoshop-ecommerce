@@ -39,7 +39,6 @@ const Register = () => {
 
   }
 
-
   function getData(event) {
     const names = event.target.name
     const values = event.target.value
@@ -57,19 +56,19 @@ console.log(name)
           <h1>{success}</h1>
           <input type="text" placeholder="Full Name" name="fullname" onChange={getData} />
               {error.fullname && 
-                <p>add Name</p>
+                <p>Add Name</p>
               }
           <input type="email" placeholder="Email"  name="email" onChange={getData} />
               {error.email && 
-                <p>add email</p>
+                <p>Add email</p>
               }
           <input type="password" placeholder="Password"name="password" onChange={getData} />
               {error.password && 
-                <p>add password</p>
+                <p>Add password</p>
               }
           <input type="password" placeholder="Confirm Password" name="confirm" onChange={getData} />
               {error.confirm && 
-                <p>add confirm pass</p>
+                <p>Add confirm pass</p>
               }
 
           <button type="submit" onClick={()=>login()}>Sign Up</button>

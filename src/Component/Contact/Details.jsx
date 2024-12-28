@@ -46,43 +46,38 @@ const Details = () => {
                             <p>2140 W Thunderbird Rd, Phoenix, Arkansas 85023, United States</p>
                         </div>
                     </div>
-                    {/* <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d774382.6761693481!2d-73.979681!3d40.69748800000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1729863038995!5m2!1sen!2sbd" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9831306.91025768!2d-119.72618785028722!3d56.94452978792602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0d03d337cc6ad9%3A0x9968b72aa2438fa5!2sCanada!5e1!3m2!1sen!2sin!4v1735363232099!5m2!1sen!2sin"></iframe>
 
                 </div>
             </div>
 
+            <div className="detail_form">
+                <h2>Get in Touch</h2>
+                <div>
+                    <form action="#" method="POST">
+                    <div className="form-group">
+                        <p htmlFor="name">Name</p>
+                        <input type="text"id="name" name="name" placeholder="Your Name" />
+                    </div>
+                    <div className="form-group">
+                        <p htmlFor="email">Email</p>
+                        <input type="email"id="email" name="email" placeholder="Your Email" />
+                    </div>
+                    <div className="form-group">
+                        <p htmlFor="subject">Subject</p>
+                        <input type="text" id="subject" name="subject" placeholder="Subject" />
+                    </div>
+                    <div className="form-group">
+                        <p htmlFor="message">Message</p>
+                        <textarea id="message" name="message" placeholder="Your Message" ></textarea>
+                    </div>
+                    <div className="form-group">
+                        <button type="submit">Submit</button>
+                    </div>
+                    </form>
+                </div>
+                </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <div className='detail_form'>
-                <p>aaaaaaaaa</p>
-            </div>
         </div>
     </div> 
     </>

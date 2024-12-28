@@ -8,6 +8,8 @@ import shop4 from '../../Assets/Images/shop4.jpg'
 
 const Navbar = () => {
     const [hide, sethide] = useState(false)
+    const [selectProduct,setselectProduct ] = useState('')
+
 
     function opendiv(data) {
         console.log(data);
@@ -16,22 +18,29 @@ const Navbar = () => {
     function closediv(params) {
         sethide(false)
     }
+    const productOption = (e) => {
+        setselectProduct(e.target.value)
+        console.log(selectProduct,"aaa")
+    }
+console.log(selectProduct);
 
   return (
     <>
         <div className='nav_container'>
             <div className='navbar'>       
-                <select name="" id="">
+                <select name="" id="" onChange={productOption}>
                     <option value=""><p><HiOutlineMenuAlt1 /></p>All Categories</option>
-                    <option value="">Fruit</option>
-                    <option value="">Juice</option>
-                    <option value="">Meat</option>
+                    <option value="fruit">Fruit</option>
+                    <option value="juice">Juice</option>
+                    <option value="meat">Meat</option>
                 </select>
                 <div className='nav_list'>
                         <Link to="/"><p>Home</p></Link>
                     <div className='n1'>
                         <div className='shop_nav' onMouseOver={()=>opendiv("s1")}  onMouseLeave={()=>closediv()}>
-                            <Link to="/shop"><p>Shop</p></Link>
+                            <Link to="/shop">
+                            <p>Shop</p>
+                            </Link>
                             <MdAdd className='plus' />
                         </div>
                         <div className={hide=="s1"?"shop":"shop1"}>
@@ -62,7 +71,9 @@ const Navbar = () => {
 
                     <div className='n1'>
                         <div className='shop_nav' onMouseOver={()=>opendiv("s2")}  onMouseLeave={()=>closediv()}>
-                            <Link to="/pages"><p>Pages</p></Link>
+                            {/* <Link to="/pages"> */}
+                            <p>Pages</p>
+                            {/* </Link> */}
                             <MdAdd className='plus' />
                         </div>
                             <div className={hide=="s2"?"page":"page1"}>
@@ -75,16 +86,24 @@ const Navbar = () => {
                             </div>
                     </div>
 
-                        <Link to="/about"><p>About</p></Link>
+                        {/* <Link to="/about"> */}
+                        <p>About</p>
+                        {/* </Link> */}
                         <div className='n1'>
-                            <Link to="/blog" onMouseOver={()=>opendiv("s3")} onMouseLeave={()=>closediv()}><p>Blog</p></Link>
+                            {/* <Link to="/blog" onMouseOver={()=>opendiv("s3")} onMouseLeave={()=>closediv()}> */}
+                            <p>Blog</p>
+                            {/* </Link> */}
                             <div className={hide=="s3"?"blog":"blog1"}>
                                 <p>Blog Details</p>
                                 <p></p>
                             </div>
                         </div>
-                        <Link to="/userDashboard"><p>User Dashboard</p></Link>
-                        <Link to="/contact"><p>Contact</p></Link>
+                        {/* <Link to="/userDashboard"> */}
+                        <p>User Dashboard</p>
+                        {/* </Link> */}
+                        <Link to="/contact">
+                        <p>Contact</p>
+                        </Link>
                 </div>
 
                <Link to="/reg"> <button className='nav_button'>Seller Login</button></Link>

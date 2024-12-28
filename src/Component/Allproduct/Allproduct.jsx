@@ -22,6 +22,7 @@ const Allproduct = () => {
       price: 60.99,
       offerPrice: "$12.99",
       images: tomato,
+      catagory:"fruit",
     },
     {
       title: "Chicken Eggs",
@@ -36,10 +37,44 @@ const Allproduct = () => {
       images: watermelon,
     },
     {
+      title: "Fresh Watemelon",
+      price: 8.99,
+      offerPrice: "$15.99",
+      images: watermelon,
+    },
+    {
+      title: "Fresh Watemelon",
+      price: 8.99,
+      offerPrice: "$15.99",
+      images: watermelon,
+      catagory:"juice",
+    },
+    {
       title: "Beef Steak",
       price: 12.99,
       offerPrice: "$20.99",
       images: beef,
+      catagory:"meat",
+    },
+    {
+      title: "Fresh Watemelon",
+      price: 8.99,
+      offerPrice: "$15.99",
+      images: watermelon,
+    },
+    {
+      title: "Fresh Watemelon",
+      price: 8.99,
+      offerPrice: "$15.99",
+      images: watermelon,
+      catagory:"juice",
+    },
+    {
+      title: "Beef Steak",
+      price: 12.99,
+      offerPrice: "$20.99",
+      images: beef,
+      catagory:"meat",
     },
   ];
   const [veg, setveg] = useState(vegetableProducts)
